@@ -11,7 +11,7 @@ ifeq ($(OS),Darwin)
 endif
 
 install:
-	node-waf -v build install
+	node-waf -v configure build install
 
 zipfile.node:
 	node-waf -v build
@@ -20,7 +20,7 @@ clean:
 	node-waf -v clean distclean
 
 uninstall:
-	node-waf -v uninstall
+	node-waf -v configure uninstall
 
 test:
 	@PATH=./node_modules/mocha/bin:${PATH} && NODE_PATH=./lib:$NODE_PATH mocha -R spec
