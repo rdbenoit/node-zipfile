@@ -29,7 +29,7 @@
    },
   "engines"       : { "node": ">= 0.6.13 && < 0.9.0" },
   "scripts"       : {
-	  "preinstall" : "make clean",
+	  "preinstall" : "make uninstall",
       "install" : "make install",
       "test"    : "make test"
    }

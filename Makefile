@@ -19,7 +19,7 @@ zipfile.node:
 clean:
 	node-waf -v clean distclean
 
-uninstall:
+uninstall: clean
 	node-waf -v configure uninstall
 
 test:
