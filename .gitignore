@@ -7,3 +7,4 @@ lib/_zipfile.node
 deps/libzip-*/
 node_modules
 test/tmp/
+/.idea/
